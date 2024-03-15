@@ -1,0 +1,56 @@
+[
+  {
+    "recipe_image": "https://i.ibb.co/BgT59Dk/Grilled-Chicken-Salad.jpg",
+    "recipe_id": 1,
+    "recipe_name": "Grilled Chicken Salad",
+    "short_description": "A refreshing salad with grilled chicken, mixed greens, and tangy dressing.",
+    "ingredients": ["300 g chicken breast", "150 g mixed greens", "100 g cherry tomatoes", "50 g cucumber", "30 ml balsamic vinaigrette"],
+    "preparing_time": 20,
+    "calories": 280
+  },
+  {
+    "recipe_image": "https://i.ibb.co/ZBBQjNL/Vegetable-Stir-Fry.jpg",
+    "recipe_id": 2,
+    "recipe_name": "Vegetable Stir-Fry",
+    "short_description": "A flavorful stir-fry loaded with fresh vegetables and a savory sauce.",
+    "ingredients": ["200 g broccoli", "150 g bell peppers", "100 g carrots", "100 g snap peas", "120 ml soy sauce"],
+    "preparing_time": 25,
+    "calories": 220
+  },
+  {
+    "recipe_image": "https://i.ibb.co/HDtwP8V/Quinoa-Salad.jpg",
+    "recipe_id": 3,
+    "recipe_name": "Quinoa Salad",
+    "short_description": "A nutritious salad featuring quinoa, colorful vegetables, and a zesty lemon dressing.",
+    "ingredients": ["250 g cooked quinoa", "100 g cherry tomatoes", "50 g red onion", "50 g bell peppers", "30 ml lemon juice"],
+    "preparing_time": 15,
+    "calories": 180
+  },
+  {
+    "recipe_image": "https://i.ibb.co/1b8B5D8/Pasta-Primavera.jpg",
+    "recipe_id": 4,
+    "recipe_name": "Pasta Primavera",
+    "short_description": "A delightful pasta dish filled with seasonal vegetables and tossed in a creamy sauce.",
+    "ingredients": ["300 g pasta", "200 g mixed vegetables (zucchini, squash, bell peppers)", "150 ml cream", "50 g Parmesan cheese"],
+    "preparing_time": 30,
+    "calories": 350
+  },
+  {
+    "recipe_image": "https://i.ibb.co/ZWfXw2Q/Mango-Chicken-Curry.jpg",
+    "recipe_id": 5,
+    "recipe_name": "Mango Chicken Curry",
+    "short_description": "An exotic curry bursting with the flavors of ripe mangoes and tender chicken.",
+    "ingredients": ["400 g chicken thighs", "200 g mangoes", "150 ml coconut milk", "100 g onions", "120 ml curry paste"],
+    "preparing_time": 35,
+    "calories": 400
+  },
+  {
+    "recipe_image": "https://i.ibb.co/v466gxn/Caprese-Salad.jpg",
+    "recipe_id": 6,
+    "recipe_name": "Caprese Salad",
+    "short_description": "A classic Italian salad featuring fresh tomatoes, creamy mozzarella, and fragrant basil leaves.",
+    "ingredients": ["300 g ripe tomatoes", "200 g fresh mozzarella", "100 g basil leaves", "30 ml balsamic glaze"],
+    "preparing_time": 10,
+    "calories": 250
+  }
+]
