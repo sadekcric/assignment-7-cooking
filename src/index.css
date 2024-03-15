@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Lexend", sans-serif;
+}
+
+.poster {
+  background: linear-gradient(90deg, #201141, #150b2b33, #150b2b), url("./assets/poster.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
