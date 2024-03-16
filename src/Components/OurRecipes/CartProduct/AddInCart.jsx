@@ -95,7 +95,8 @@ const AddInCart = ({cookItems,setCookItems}) => {
 };
 
 AddInCart.propTypes = {
-  
+  cookItems:PropTypes.array,
+  setCookItems:PropTypes.object
 };
 
 export default AddInCart;
