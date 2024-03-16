@@ -38,7 +38,7 @@ const Nav = () => {
 
 
         {/* for Computer Device */}
-        <div class="navbar-center lg:block hidden">
+        <div class="navbar-center lg:block hidden -translate-x-48">
         <ul class=" flex gap-5 text-xl px-6 py-3 ">
               <li><a>Home</a></li>
               <li><a>Recipes</a></li>
