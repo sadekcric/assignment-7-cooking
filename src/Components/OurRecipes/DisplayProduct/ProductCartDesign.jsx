@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { CiClock2 } from "react-icons/ci";
 import { FaBurn } from "react-icons/fa";
+import List from './List';
 
-const ProductCartDesign = ({item}) => {
+const ProductCartDesign = ({item, handleWantCook}) => {
 
   // console.log(item);
   return (
@@ -21,14 +22,10 @@ const ProductCartDesign = ({item}) => {
 
             <h6 className='text-2xl font-bold'>Ingredients: {item.ingredients.length} </h6>
 
-            <ul className='list-disc ml-8 text-lg lg:text-xl  text-gray-500 lg:leading-loose'>
-
-              {
-                item.ingredients.map(ing =><li>{ing}</li>)
-              }
-              
-              
-            </ul>
+            {
+             item.ingredients.map((ing,idx) => <List key={idx} ing={ing} />)
+            }
+            {/* item.ingredients.map((ing,idx) =><li>key={idx} {ing}</li>) */}
 
             <hr />
 
@@ -46,7 +43,7 @@ const ProductCartDesign = ({item}) => {
 
 
             <div class="card-actions">
-              <button class="btn bg-[#0BE58A] rounded-full px-6 font-semibold">Want to Cook</button>
+              <button onClick={() => handleWantCook(item)} class="btn bg-[#0BE58A] rounded-full px-6 font-semibold">Want to Cook</button>
             </div>
         </div>
 

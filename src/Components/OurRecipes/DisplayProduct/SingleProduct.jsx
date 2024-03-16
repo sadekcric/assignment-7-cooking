@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import ProductCartDesign from './ProductCartDesign';
 
-const SingleProduct = () => {
+const SingleProduct = ({handleWantCook}) => {
 
   const [items, setItems] = useState([])
 
@@ -27,7 +27,7 @@ const SingleProduct = () => {
   return (
     <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 lg:w-2/3'>
       {
-        items.map(item =><ProductCartDesign key = {item['recipe_id']} item = {item} />)
+        items.map((item, idx) =><ProductCartDesign key={item['recipe_id']} item = {item} handleWantCook = {handleWantCook} />)
       }
     </div>
   );
