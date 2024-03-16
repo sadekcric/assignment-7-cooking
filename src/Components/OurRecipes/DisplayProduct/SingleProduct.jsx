@@ -10,7 +10,7 @@ const SingleProduct = ({handleWantCook}) => {
   useEffect(() => {
 
     (async()=>{
-      const res = await fetch('../../../../public/recipes.json');
+      const res = await fetch('/recipes.json');
       const data= await res.json()
       setItems(data);
     })()
