@@ -37,19 +37,23 @@ const AddInCart = ({cookItems,setCookItems}) => {
         </div>
 
         <table className='text-lg mt-5 text-center mb-10 mx-auto'>
-          <tr>
-            <th className='p-3 hidden lg:block'></th>
-            <th className='p-3'>Name</th>
-            <th className='p-3' >Time</th>
-            <th className='p-3'>Calories</th>
-            <th className='p-3'></th>
-          </tr>
+          <thead>
+            <tr>
+              <th className='p-3 hidden lg:block'></th>
+              <th className='p-3'>Name</th>
+              <th className='p-3' >Time</th>
+              <th className='p-3'>Calories</th>
+              <th className='p-3'></th>
+            </tr>
+          </thead>
         {/* Want to cook Table */}
 
+        <tbody>
         {
             cookItems.map((item, idx) => <Table1 key={item['recipe_id']} item={item} index={idx} handlePreparingBtn={handlePreparingBtn} />)
         }
-        {/* <Table1 cookItems ={cookItems} /> */}
+        </tbody>
+       
 
         </table>
 
@@ -65,16 +69,20 @@ const AddInCart = ({cookItems,setCookItems}) => {
 
         {/* Currently cooking table*/}
         <table className='text-lg mt-5 mb-10 mx-auto'>
-          <tr>
-            <th className='p-3'></th>
-            <th className='p-3'>Name</th>
-            <th className='p-3'>Time</th>
-            <th className='p-3'>Calories</th>
-          </tr>
+          <thead>
+            <tr>
+              <th className='p-3'></th>
+              <th className='p-3'>Name</th>
+              <th className='p-3'>Time</th>
+              <th className='p-3'>Calories</th>
+            </tr>
+          </thead>
 
+          <tbody>
           {
             currentCooking.map((cooking,idx)=><Table2 key={idx} cooking={cooking} index={idx} />)
           }
+          </tbody>
 
           
           
