@@ -14,10 +14,10 @@ const Nav = () => {
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
             </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2  rounded-box w-52 bg-white">
-              <li><a>Home</a></li>
-              <li><a>Recipes</a></li>
-              <li><a>About</a></li>
-              <li><a>Search</a></li>
+              <li><a href='#'>Home</a></li>
+              <li><a href='#'>Recipes</a></li>
+              <li><a href='#'>About</a></li>
+              <li><a href='#'>Search</a></li>
 
               <label class=" input-bordered rounded-full flex items-center gap-2 mt-3">
 
@@ -40,10 +40,10 @@ const Nav = () => {
         {/* for Computer Device */}
         <div class="navbar-center lg:block hidden -translate-x-48">
         <ul class=" flex gap-5 text-xl px-6 py-3 ">
-              <li><a>Home</a></li>
-              <li><a>Recipes</a></li>
-              <li><a>About</a></li>
-              <li><a>Search</a></li>
+              <li><a href='#'>Home</a></li>
+              <li><a href='#'>Recipes</a></li>
+              <li><a href='#'>About</a></li>
+              <li><a href='#'>Search</a></li>
             </ul>
         </div>
        
