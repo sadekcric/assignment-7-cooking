@@ -31,14 +31,14 @@ const AddInCart = ({cookItems,setCookItems}) => {
         {/* Want to cook */}
         <div className='w-4/5 mx-auto'>
 
-          <h3 className='text-3xl font-bold text-center mb-2'>Want to cook: {cookItems.length}</h3>
+          <h3 className='text-2xl lg:text-3xl font-bold text-center mb-2'>Want to cook: {cookItems.length}</h3>
           
           <div className='border-b-2 border-slate-100'></div>
         </div>
 
         <table className='text-lg mt-5 text-center mb-10'>
           <tr>
-            <th className='p-3'></th>
+            <th className='p-3 hidden lg:block'></th>
             <th className='p-3'>Name</th>
             <th className='p-3' >Time</th>
             <th className='p-3'>Calories</th>
@@ -57,7 +57,7 @@ const AddInCart = ({cookItems,setCookItems}) => {
         {/* Currently cooking */}
         <div className='w-4/5 mx-auto'>
 
-          <h3 className='text-3xl font-bold text-center mb-2'>Currently cooking: {currentCooking.length}</h3>
+          <h3 className='text-2xl lg:text-3xl font-bold text-center mb-2'>Currently cooking: {currentCooking.length}</h3>
           
           <div className='border-b-2 border-slate-100'></div>
         </div>
