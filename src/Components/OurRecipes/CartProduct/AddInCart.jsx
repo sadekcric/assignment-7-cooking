@@ -6,9 +6,17 @@ import Table2 from './Table2';
 const AddInCart = ({cookItems,setCookItems}) => {
 
   const [currentCooking, setCurrentCooking] = useState([])
+  const [totalTime, SetTotalTime] = useState(0);
+  const [totalCal, SetTotalCal] = useState(0);
+  
+
+
+
 
    // add to Currently cooking: clicking Preparing btn
    const handlePreparingBtn = (id) =>{
+    SetTotalTime(totalTime+id['preparing_time'])
+    SetTotalCal(totalCal + id['calories'])
     setCurrentCooking([...currentCooking,id ])
     
     const remainItems = cookItems.filter(itm => itm['recipe_id']!==id['recipe_id'])
@@ -53,8 +61,7 @@ const AddInCart = ({cookItems,setCookItems}) => {
             cookItems.map((item, idx) => <Table1 key={item['recipe_id']} item={item} index={idx} handlePreparingBtn={handlePreparingBtn} />)
         }
         </tbody>
-       
-
+        
         </table>
 
 
@@ -83,6 +90,15 @@ const AddInCart = ({cookItems,setCookItems}) => {
             currentCooking.map((cooking,idx)=><Table2 key={idx} cooking={cooking} index={idx} />)
           }
           </tbody>
+
+          <tfoot>
+            <tr>
+              <th className='p-3'></th>
+              <th className='p-3'>Total:</th>
+              <th className='p-3'>{totalTime} minutes</th>
+              <th className='p-3'>{totalCal} Calories</th>
+            </tr>
+          </tfoot>
 
           
           
