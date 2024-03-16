@@ -25,7 +25,7 @@ const AddInCart = ({cookItems,setCookItems}) => {
 
   return (
     <div className='flex-1'>
-      <div className='border-2 border-slate-100 rounded-xl px-2 py-5'>
+      <div className='border-2 border-slate-200 rounded-xl px-2 py-5'>
 
 
         {/* Want to cook */}
@@ -33,10 +33,10 @@ const AddInCart = ({cookItems,setCookItems}) => {
 
           <h3 className='text-2xl lg:text-3xl font-bold text-center mb-2'>Want to cook: {cookItems.length}</h3>
           
-          <div className='border-b-2 border-slate-100'></div>
+          <div className='border-b-2 border-slate-200'></div>
         </div>
 
-        <table className='text-lg mt-5 text-center mb-10'>
+        <table className='text-lg mt-5 text-center mb-10 mx-auto'>
           <tr>
             <th className='p-3 hidden lg:block'></th>
             <th className='p-3'>Name</th>
@@ -59,7 +59,7 @@ const AddInCart = ({cookItems,setCookItems}) => {
 
           <h3 className='text-2xl lg:text-3xl font-bold text-center mb-2'>Currently cooking: {currentCooking.length}</h3>
           
-          <div className='border-b-2 border-slate-100'></div>
+          <div className='border-b-2 border-slate-200'></div>
         </div>
 
 

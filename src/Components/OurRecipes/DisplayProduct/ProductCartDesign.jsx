@@ -9,7 +9,7 @@ const ProductCartDesign = ({item, handleWantCook}) => {
   // console.log(item);
   return (
     <div>
-      <div className='p-3 border-2 border-slate-100 rounded-xl'>
+      <div className='p-3 border-2 border-slate-200 rounded-xl'>
         <div class="card card-compact">
         <figure><img className='h-72 w-full mb-5' src={item['recipe_image']} alt="" /></figure>
 
@@ -25,7 +25,7 @@ const ProductCartDesign = ({item, handleWantCook}) => {
             {
              item.ingredients.map((ing,idx) => <List key={idx} ing={ing} />)
             }
-            {/* item.ingredients.map((ing,idx) =><li>key={idx} {ing}</li>) */}
+            
 
             <hr />
 
