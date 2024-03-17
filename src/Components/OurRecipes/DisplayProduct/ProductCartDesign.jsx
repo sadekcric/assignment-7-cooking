@@ -32,7 +32,7 @@ const ProductCartDesign = ({item, handleWantCook}) => {
             <div className='flex gap-5 items-center text-lg'>
               <div className='flex gap-2 items-center'>
               <CiClock2 />
-              <p>{item['preparing_time']} minutes</p>
+              <p>{item['preparing_time']} min</p>
               </div>
 
               <div className='flex gap-2 items-center'>
