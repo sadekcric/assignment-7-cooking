@@ -32,7 +32,7 @@ const AddInCart = ({cookItems,setCookItems}) => {
 
 
   return (
-    <div className='flex-1'>
+    <div className='flex-1 overflow-x-scroll'>
       <div className='border-2 border-slate-200 rounded-xl px-2 py-5'>
 
 

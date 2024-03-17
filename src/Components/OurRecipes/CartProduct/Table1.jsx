@@ -1,6 +1,3 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-
 const Table1 = ({item, index, handlePreparingBtn}) => {
   return (
         <tr className='bg-gray-100'>
@@ -16,8 +13,6 @@ const Table1 = ({item, index, handlePreparingBtn}) => {
   );
 };
 
-Table1.propTypes = {
-  
-};
+
 
 export default Table1;
